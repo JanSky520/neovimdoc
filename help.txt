@@ -1,0 +1,198 @@
+*help.txt*	Nvim
+
+				 NVIM - help
+							          k
+     移动光标：使用光标键或这使用 h 左移，	       		h   l
+	       j 向下移动， k 向上移动，l 向下移动。	 	  j
+ 关闭当前窗口：使用 :q<Enter>。
+     退出 Vim：使用 :qa!<Enter> （注意，所有更改都将丢失！）。
+
+     跳转主题：将光标定位在标签上（例如 |bars|）然后点击 CTRL-]。
+     使用鼠标：双击鼠标左键标签，例如 |bars|。
+ 返回上一位置：使用 CTRL-O。重复以进一步返回。
+
+ 获取特定帮助：可以通过向命令行提供 |:help| 命令，直接访问想要的任何帮助内容。
+  	       在参数前添加某些内容以指定上下文： *help-context*
+
+			  命令			 前置      例子	~
+		      Normal mode command		   :help x
+		      Visual mode command	  v_	   :help v_u
+		      Insert mode command	  i_	   :help i_<Esc>
+		      Command-line command	  :	   :help :quit
+		      Command-line editing	  c_	   :help c_<Del>
+		      Vim command argument	  -	   :help -r
+		      Option			  '	   :help 'textwidth'
+		      Regular expression	  /	   :help /[
+		    查看 |help-summary| 获取更多上下文和解释。
+		    查看 |notation| 获取更多帮助语法的解释。
+
+    搜索帮助：输入 :help word，然后按下 CTRL-D 查看与 word 匹配的帮助条目。
+	      或者使用 :helpgrep word。 |:helpgrep|
+
+    入门指南：进行 Vim 教程，这是一个30分钟的互动课程帮助学习基本的命令，
+              见 |vimtutor|。从头到尾阅读用户手册： |usr_01.txt|
+
+Vim 是 Vi 的改进版。大部分 Vim 的开发是由 Bram Moolenaar 完成的，
+但是也得到了许多其他人的帮助。见 |credits|。
+
+==============================================================================
+NVIM DOCUMENTATION
+
+------------------------------------------------------------------------------
+关于 NVIM				*reference_toc* *doc-file-list* *Q_ct*
+
+|news|			自上一个版本发布以来的新闻
+|nvim|			从 Vim 迁移过来
+|vim-differences|	Nvim 与 Vim 的区别
+|faq|			常见问题解答
+|user-manual|		用户手册：如何完成编辑任务
+|quickref|		常用命令概览
+|tutor|			30分钟交互式入门课程
+|copying|		关于版权
+|iccf|			帮助乌干达的贫困儿童
+|sponsor|		赞助 Vim 开发，注册成为 Vim 用户
+|www|			Vim 在全球网络上的位置
+|bugs|			如何报告 bug 
+|support|		支持平台
+
+------------------------------------------------------------------------------
+一般
+
+|intro|			介绍 Vim，帮助文件中使用的符号表示
+|helphelp|		使用 :help 文件
+|index|			所以命令的索引
+|tips|			使用 Vim 的各种技巧
+|message.txt|		（错误）消息和解释
+|uganda.txt|		Vim 发行版及其资金用途
+
+------------------------------------------------------------------------------
+基础编辑
+
+|starting|		启动 Vim，Vim 命令参数，初始化
+|edit-files|		编辑和写入文件
+|motion.txt|		移动光标的命令
+|scrolling|		滚动窗口的文本
+|insert.txt|		插入和替换模式
+|change.txt|		删除和替换文本
+|undo-redo|		撤销和重做
+|repeat.txt|		重复命令，Vim 脚本和调试
+|visual-mode|		使用可视模式（选择文本）
+|various|		其他各种命令
+|crash-recovery|	从奔溃中恢复
+
+------------------------------------------------------------------------------
+高级编辑
+
+|cmdline|		命令行编辑
+|options|		所有选项的描述
+|pattern-searches|	Vim 正则表达式模式和搜索命令
+|key-mapping|		键映射（快捷键），缩写
+|tags|			标签和特殊搜索
+|windows|		窗口和缓冲区使用命令
+|tabpage|		选项卡页面使用命令
+|spell|			拼写检查
+|diff|			文件比较
+|folding|		折叠（隐藏）行的范围
+|terminal|		内置终端仿真器
+
+------------------------------------------------------------------------------
+API (可扩展性/脚本化/插件)
+
+|api|			通过 PRC、Lua 和 Vimscript 的 Nvim API
+|ui|			Nvim UI 协议
+|lua-guide|		Nvim Lua 指南
+|lua|			Lua API
+|luaref|		Lua 参考手册
+|luvref|		Luv (|vim.uv|) 参考手册
+|autocmd|		事件处理器
+|job-control|		生成和控制多个进程
+|channel|		Nvim 异步 IO
+|vimscript|		Vimscript 参考手册
+|vimscript-functions|	Vimscript 函数
+|testing.txt|		Vimscript 测试函数
+|remote-plugin|		Nvim 远程插件
+
+------------------------------------------------------------------------------
+编程语言支持
+
+|lsp|			语言服务协议 (LSP)
+|diagnostic-api|	诊断框架
+|treesitter|		增量语法解析
+|indent.txt|		C 等语言的自动缩进
+|syntax|		语法高亮
+|filetype|		特定类型文件的设置
+|quickfix|		快速编辑-编译-修复循环的命令
+|ft_ada.txt|		Ada 文件类型插件
+|ft_ps1.txt|		PowerShell 文件类型插件
+|ft_raku.txt|		Raku 文件类型插件
+|ft_rust.txt|		Rust 文件类型插件
+|ft_sql.txt|		SQL 文件类型插件
+
+------------------------------------------------------------------------------
+UI
+
+|tui|			内置用户 UI
+|gui|			外部（图形化）UIs
+|signs|			作为窗口装饰显示的标记 ("gutter")
+
+------------------------------------------------------------------------------
+语言支持
+
+|digraph|		可用 digraphs 列表
+|mbyte.txt|		多字节文本支持
+|mlang.txt|		非英语语言支持
+|rileft.txt|		右-左编辑模式
+|arabic.txt|		阿拉伯语言支持和编辑
+|hebrew.txt|		希伯来语言支持和编辑
+|russian.txt|		俄罗斯语言支持和编辑
+
+------------------------------------------------------------------------------
+互操作性
+
+|provider|		内置远程插件主机
+|if_perl|		Perl 接口
+|if_pyth|		Python 接口
+|if_ruby|		Ruby 接口
+
+------------------------------------------------------------------------------
+版本
+
+|deprecated|		即将移除的已弃用功能
+|vi-differences|	Vim 与 Vi 之间的区别
+
+------------------------------------------------------------------------------
+开发 NVIM
+
+|dev|			Nvim 的开发
+|dev-style|		开发风格指南
+|dev-theme|		设计指南（颜色方案等）
+|dev-tools|		开发 Nvim 的工具和技术
+|dev-vimpatch|		合并自 Vim 的补丁
+
+标准插件 ~
+						*standard-plugin-list*
+|pi_gzip.txt|		读写压缩文件
+|pi_health.txt|		健康检查框架
+|pi_msgpack.txt|	msgpack 实用工具
+|pi_netrw.txt|		通过网络读写文件
+|pi_paren.txt|		高亮匹配括号
+|pi_spec.txt|		用于处理 rpm spec 文件的文件类型插件
+|pi_tar.txt|		Tar 文件资源管理器
+|pi_zip.txt|		Zip 文件资源管理器
+
+本地补充 ~
+							*local-additions*
+
+------------------------------------------------------------------------------
+*bars*		Bars example
+
+现在你可以使用 CTRL-T， CTRL-O，g<RightMouse> 或者 <C-RightMouse> 返回到你之前
+的位置，因为你已经通过 CTRL-] 或双击鼠标跳转到这里了。
+
+请注意，标签位于 | 字符之间，启用高亮显示时，这些字符会被隐藏。这可以更易于阅读
+
+你可以在任何单词上使用 CTRL-] （即使它不再 "|" 内），Nvim 将尝试为其查找帮助。
+特别时对于单引号中的选项，例如 'hlsearch'。
+
+------------------------------------------------------------------------------
+ vim:tw=78:isk=!-~,^*,^\|,^\":ts=8:noet:ft=help:norl:
