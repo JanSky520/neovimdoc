@@ -1,4 +1,4 @@
-*help.txt*	Nvim
+*help.txt*	Nvim				             译者：JanSky
 
 				 NVIM - help
 							          k
