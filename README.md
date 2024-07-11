@@ -4,12 +4,15 @@
   - [项目简介](#项目简介)
   - [使用方法](#使用方法)
   - [关于从 Snap 安装的 Neovim 的说明](#关于从-snap-安装的-neovim-的说明)
+  - [参考的文档](#参考的文档)
 
 ## 项目简介
 
 此项目为 Neovim 的中文文档翻译项目，目前正在持续更新。欢迎大家加入！
 
 ![微信群二维码](./res/groupQR_code.jpg)
+
+项目中部分文档参考 [Vim 中文文档计划](https://github.com/yianwillis/vimcdoc/)，详细信息请见 [参考的文档](#参考的文档)。
 
 ## 使用方法
 
@@ -22,6 +25,7 @@ git clone https://github.com/JanSky520/neovimdoc.git
 ```
 
 切换到本项目的根文件夹
+
 ```bash
 cd neovimdoc
 ```
@@ -39,7 +43,6 @@ sudo cp -rf ./nvim_doc/* /usr/share/nvim/runtime/doc
 ```
 
 运行成功后，进入 Neovim，输入 `:help` 命令，即可查看中文文档（多数文档仍待翻译）。
-
 
 ***注意：由于不是使用的插件替换方法，在更新neovim后可能变回英文，重新替换即可。***
 
@@ -89,3 +92,7 @@ sudo apt install neovim
 ```
 
 安装完成后，输入 `nvim` 即可启动 Neovim。
+
+## 参考的文档
+
+- uganda.txt
